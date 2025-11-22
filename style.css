@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --green: #0c5a4a; */
+  --green: #035642;
+  --white: #ffff;
+  --dark: #000;
+}
+
+body {
+  font-family: "Inter";
+}
+
+/* Daektop */
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  background-color: rgb(233, 231, 231);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logo img {
+  height: 65px;
+  width: 150px;
+}
+
+.navbar .btn a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h2 {
+  margin: 40px 0;
+}
+
+.container p {
+  margin-top: 10px;
+}
+
+.rating-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  margin: 25px auto;
+  width: 100%;
+}
+
+.rating-wrapper .rating-box {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 190px;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px solid #0b5a4a;
+  border-radius: 40px;
+  background: white;
+}
+
+.rating-box .star {
+  width: 20px;
+}
+
+.rating-box .rate {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+.rating-box .brand {
+  height: 18px;
+  margin-top: 2px;
+}
+
+.curve {
+  position: relative;
+}
+
+.curve img {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+}
+
+.content {
+  margin-top: 80px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  color: var(--white);
+  position: absolute;
+  top: 290px;
+}
+
+.content p {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.content .card-title {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .card-title .cards img {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 30px;
+}
+
+.title {
+  text-align: center;
+  background: var(--white);
+  color: var(--green);
+  padding: 50px;
+  font-size: 1.5rem;
+  word-spacing: 10px;
+}
+
+.topic {
+  background: var(--green);
+  color: var(--white);
+  padding: 25px;
+}
+
+.topic table {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.topic table tr {
+  border-bottom: 2px solid var(--white);
+}
+
+
+.topic table tr th {
+  padding: 10px;
+  background-color: var(--white);
+  color: var(--dark);
+  width: 100px;
+}
+
+.topic table td {
+  padding: 5px 20px;
+}
+
+table p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+table tr td .box {
+  background: var(--white);
+  color: var(--dark);
+  width: fit-content;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table ul li,
+table ol li {
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.date {
+  display: block;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  margin: 30px auto;
+  background: rgb(243, 180, 63);
+  height: 200px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.date h2 {
+  padding: 10px;
+}
+
+.duration {
+  margin: 30px 0;
+}
+
+/* Course Fee Card Box */
+.fee-box {
+  background: #0c5a4a; /* green background */
+  color: white;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 25px 20px;
+  border-radius: 25px;
+  position: relative;
+}
+
+/* Title Text */
+.fee-box .course {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Old price  */
+.old-fee {
+  text-decoration: line-through;
+  font-size: 20px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+/* New price row layout */
+.price-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 10px 0;
+}
+
+/* New Offer Price */
+.new-fee {
+  font-size: 45px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.sub {
+  margin-bottom: 15px;
+}
+
+/* Installment text next to price */
+.install {
+  font-size: 14px;
+  line-height: 15px;
+  max-width: 80px;
+  text-align: left;
+  position: absolute;
+  right: 20px;
+  top: 140px;
+}
+
+/* Sub text */
+.fee-box .sub {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer .btn button {
+  margin: 30px auto;
+  background-color: rgb(46, 150, 46);
+  color: var(--white);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  height: 60px;
+  width: 240px !important;
+}
+
+.footer .btn button:focus {
+  outline: none;
+}
+
+/* Mobile UI */
+.mobile-ui {
+  height: 100vh; /* full screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+}
+
+@media (max-width: 768px) {
+  .mobile-ui {
+    display: block;
+  }
+
+  .desktop-warning {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 50px;
+    width: 120px;
+  }
+
+  .navbar .btn button {
+    width: 120px;
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .rating-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content .card-title .cards img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .topic table {
+    width: 100%;
+  }
+
+  .date {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .course {
+    width: 80%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .footer .btn button {
+    width: 200px;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-ui {
+    display: none;
+  }
+
+  .desktop-warning {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .desktop-warning h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
